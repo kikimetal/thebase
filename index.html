@@ -5,6 +5,12 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="ja"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="ja"> <!--<![endif]-->
+
+
+
+
+
+
 <head>
 	<meta charset="utf-8">
 	<meta name="copyright" content="BASE" />
@@ -20,16 +26,14 @@
 	<meta name="BASE-Theme-Name" content="shop_09">
 	<meta name="BASE-Theme-Version" content="14">
 
-	{block:Hidden}
 	<!-- meta tag -->
-	{/block:Hidden}
 
 	{block:IndexPage}
 	{HeadLinkNextPrevTag}
 	{/block:IndexPage}
 
 	{BackgroundTag}
-	<style type="text/css">
+	<!-- <style type="text/css">
 		{block:NavColor}
 		.childCategoryList01_child,
 		.childCategoryList01_link,
@@ -39,7 +43,7 @@
 			color: {NavColor};
 		}
 		{/block:NavColor}
-	</style>
+	</style> -->
 
 	<!--[if IE]>
 	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -48,10 +52,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
 	<script>window.attachEvent('onload', function(){CFInstall.check({mode:'overlay'});});</script>
 	<![endif]-->
-	<link rel="stylesheet" href="/css/shopTemplate/common.css?{UpdateTime}">
-	<link rel="stylesheet" href="{BASEURL}/css/colorbox.css">
-	<link rel="stylesheet" href="{BASEURL}/css/shopTemplate/shop_09.css?{UpdateTime}">
-	<link rel="stylesheet" href="https://rawgit.com/kikimetal/thebase/master/style.css">
+
+	<!-- <link rel="stylesheet" href="/css/shopTemplate/common.css?{UpdateTime}"> -->
+	<!-- <link rel="stylesheet" href="{BASEURL}/css/colorbox.css"> -->
+	<!-- <link rel="stylesheet" href="{BASEURL}/css/shopTemplate/shop_09.css?{UpdateTime}"> -->
+
+
+
+	<!-- my stylesheet --------------------->
+	<!-- <link rel="stylesheet" href="https://rawgit.com/kikimetal/thebase/master/style.css"> -->
+	<style media="screen">
+		body{
+			background: #eee;
+			color: #333;
+		}
+	</style>
+	<!--------------------- my stylesheet -->
+
+
+
 
 	{block:ItemPage}
 	{MetaItemInfoTag}
@@ -77,6 +96,14 @@
 
 	{GoogleAnalyticsTag}
 </head>
+
+
+
+
+
+
+
+
 <body id="{block:IndexPage}shopTopPage{/block:IndexPage}{block:ItemPage}shopDetailPage{/block:ItemPage}" class="shop template theme--9">
 
 	{block:AppsI18n}{AppsI18nTag}{/block:AppsI18n}
